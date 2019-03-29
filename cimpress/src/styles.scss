@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.example-card {
+  margin: 20px auto;
+
+  mat-card-content.mat-card-content {
+    height: 150px;
+    overflow: auto;
+  }
+  .mat-card-header .mat-card-title {
+    margin-bottom: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+  }
+  .mat-card-header-text {
+    margin: 0 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .mat-card-image {
+    height: 480px;
+  }
+}
+.mat-card-avatar {
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+}
+.movie-card{
+
+}

@@ -1,0 +1,24 @@
+<div class="container-fluid pr-0 pl-0">
+  <div class="row mr-0 ml-0">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pr-0 pl-0">
+      <mat-progress-bar mode="indeterminate" *ngIf="apiCall"></mat-progress-bar>
+      <mat-card class="movie-card" *ngIf="!apiCall">
+        <img
+          mat-card-image
+          src="https://image.tmdb.org/t/p/w1280/{{ movie.backdropURL }}"
+          alt="{{ movie.title }}"
+        />
+        <mat-card-content>
+          <mat-card-title>{{ movie.title }}</mat-card-title>
+          <mat-card-subtitle>
+              Release Date: {{ movie.releaseDate | date }}</mat-card-subtitle
+            >
+          <p>{{ movie.plot }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="warn" (click)="backMovie()" >BACK</button>
+          </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
